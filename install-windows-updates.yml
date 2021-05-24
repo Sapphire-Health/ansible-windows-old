@@ -1,6 +1,6 @@
 ---
   - name: Install Windows Updates
-    hosts: none
+    hosts: "{{ hosts }}"
     tasks:
       - name: Install all updates without a scheduled task
         win_updates:
