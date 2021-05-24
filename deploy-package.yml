@@ -10,5 +10,5 @@
         win_command: "C:\\Windows\\Temp\\{{ package_name }} /silent /notools /accepteula /upgrade"
       - name: Delete the package
         win_file:
-          path: "C:\\Windows\\Temp\\{{ package_name }}""
+          path: "C:\\Windows\\Temp\\{{ package_name }}"
           state: absent
