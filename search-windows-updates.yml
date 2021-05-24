@@ -1,0 +1,12 @@
+---
+  - name: Search Windows Updates
+    hosts: none
+    tasks:
+      - name: Search for Windows updates
+        win_updates:
+          category_names: "{{ update_categories }}"
+          server_selection: "{{ update_server_selection }}"
+        register: result
+      - name: Output results 
+        debug:
+          var: result
