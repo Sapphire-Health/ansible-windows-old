@@ -1,6 +1,6 @@
 ---
   - name: Search Windows Updates
-    hosts: "{{ hosts }}"
+    hosts: "{{ match_host }}"
     tasks:
       - name: Search for Windows updates
         win_updates:
