@@ -3,4 +3,4 @@
     hosts: "{{ match_host }}"
     tasks:
       - name: Reboot the machine with all defaults
-        ansible.windows.win_reboot:
+        win_reboot:
